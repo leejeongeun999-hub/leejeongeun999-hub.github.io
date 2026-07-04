@@ -15,6 +15,8 @@
   ul { padding-left: 20px; }
   a { color: var(--accent); }
   hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); color: var(--ink-soft); }
 </style>
 </head>
 <body>
@@ -24,10 +26,10 @@
 
   <h2>Summary</h2>
   <p>
-    Battery Coach runs entirely on your device. It does not collect,
-    transmit, or store any personal data on any server, because it doesn't
-    have a server. There is no analytics SDK, no advertising SDK, and no
-    account system.
+    Battery Coach has no account system, no server of its own, and no
+    analytics. Your battery data and charging history never leave your
+    device. The app shows a small amount of advertising through Google
+    AdMob to stay free, described below.
   </p>
 
   <h2>What the app reads from your device</h2>
@@ -40,6 +42,27 @@
     None of the above ever leaves your device. There is no cloud sync, no
     backend, and no third party with access to it.
   </p>
+
+  <h2>Advertising</h2>
+  <p>
+    Battery Coach shows a banner ad, served through Google AdMob, to keep
+    the app free. Depending on your permission (App Tracking Transparency
+    on iOS) and your consent choice (shown on first launch in the EEA, UK,
+    and Switzerland), ads may be personalized using an on-device
+    advertising identifier; if you decline, only non-personalized ads are
+    shown. You can review or change your ad consent choice anytime from
+    Settings → Ad Privacy Options. Google's own privacy policy governs how
+    AdMob processes this data:
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+  </p>
+
+  <h2>What we collect, in one table</h2>
+  <table>
+    <tr><th>Data type</th><th>Collected?</th><th>Leaves your device?</th></tr>
+    <tr><td>Battery level, charging state, charging history</td><td>Yes, locally</td><td>No</td></tr>
+    <tr><td>Advertising identifier</td><td>Only with your consent</td><td>Shared with Google AdMob only</td></tr>
+    <tr><td>Name, email, account, location, contacts</td><td>Not collected</td><td>—</td></tr>
+  </table>
 
   <h2>Notifications</h2>
   <p>
@@ -58,9 +81,10 @@
 
   <h2>요약</h2>
   <p>
-    Battery Coach는 전적으로 기기 안에서만 동작해요. 서버가 없기 때문에 어떤
-    개인정보도 서버로 전송하거나 저장하지 않아요. 분석 도구, 광고 SDK, 계정
-    시스템 모두 없어요.
+    Battery Coach는 계정 시스템도, 자체 서버도, 분석 도구도 없어요. 배터리
+    데이터와 충전 기록은 기기 밖으로 전혀 나가지 않아요. 앱을 무료로
+    유지하기 위해 Google AdMob을 통한 소량의 광고를 보여드리며, 자세한
+    내용은 아래에 안내되어 있어요.
   </p>
 
   <h2>앱이 읽는 정보</h2>
@@ -73,6 +97,26 @@
     위 정보는 기기 밖으로 전혀 나가지 않아요. 클라우드 동기화, 백엔드 서버,
     제3자 접근 모두 없어요.
   </p>
+
+  <h2>광고</h2>
+  <p>
+    Battery Coach는 앱을 무료로 유지하기 위해 Google AdMob을 통한 배너
+    광고를 보여드려요. 권한(iOS 앱 추적 투명성)과 동의 여부(EEA, 영국,
+    스위스 지역은 최초 실행 시 표시)에 따라 기기 내 광고 식별자를 이용한
+    맞춤 광고가 표시될 수 있으며, 동의하지 않으면 맞춤 설정되지 않은
+    광고만 표시돼요. 동의 설정은 언제든 설정 → 광고 개인정보 옵션에서
+    바꿀 수 있어요. 이 데이터를 AdMob이 어떻게 처리하는지는 Google의
+    개인정보처리방침을 따릅니다:
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+  </p>
+
+  <h2>한눈에 보는 수집 정보</h2>
+  <table>
+    <tr><th>데이터 종류</th><th>수집 여부</th><th>기기 밖으로 나가나요?</th></tr>
+    <tr><td>배터리 레벨, 충전 상태, 충전 기록</td><td>예, 기기 내에만</td><td>아니요</td></tr>
+    <tr><td>광고 식별자</td><td>동의한 경우에만</td><td>Google AdMob에만 공유</td></tr>
+    <tr><td>이름, 이메일, 계정, 위치, 연락처</td><td>수집하지 않음</td><td>—</td></tr>
+  </table>
 
   <h2>알림</h2>
   <p>
