@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "targetId": "published-shoshin-privacy-policy",
+  "targetUuid": "8ec24321-337d-4b52-a040-f2cc977a4555",
+  "platform": "web-policy",
+  "accountIdentity": {
+    "repository": "leejeongeun999-hub/leejeongeun999-hub.github.io",
+    "url": "https://leejeongeun999-hub.github.io/privacy.html",
+    "appStoreId": "6787270417"
+  },
+  "identityFiles": [
+    "README.md",
+    "privacy.html"
+  ],
+  "policyFiles": [
+    "config/policy-transfer-shoshin.json"
+  ],
+  "receiptDirectory": ".policy-transfer/shoshin-privacy-policy",
+  "revisionPolicy": "git-clean",
+  "verificationCommands": {
+    "app-review-remediation": [
+      "bash",
+      "scripts/verify_shoshin_privacy.sh"
+    ]
+  }
+}
